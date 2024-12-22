@@ -3,7 +3,7 @@ function Header() {
     return (
         <>
             <header>
-                <img src={logo} alt="logo"></img>
+                No header yet
             </header>
         </>
     )
