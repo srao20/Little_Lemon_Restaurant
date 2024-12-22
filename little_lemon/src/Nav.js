@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import logo from "./images/logo1.jpg"
 function Nav() {
-    const [openMenu, setMenuOpen] = useState(false);
+    const [openMenu, setOpenMenu] = useState(false);
 
-    const toggleMenu = () => {
-        setMenuOpen(!openMenu);
+    const sandwichBar = () => {
+        setOpenMenu(!openMenu);
     }
  return(
     <>
@@ -14,14 +14,14 @@ function Nav() {
                     <img src={logo} alt="logo"/>
                 </a>
             </div>
-            {/*Mobile Nav Bar */}
-            <div className = "menu-icon" onClick={toggleMenu}>
-                <div className ='bar'></div>
-                <div className ='bar'></div>
-                <div className ='bar'></div>
+            {/*Responsive Mobile View*/}
+            <div className = "menu-icon" onClick={sandwichBar}>
+                <div className ='dash'></div>
+                <div className ='dash'></div>
+                <div className ='dash'></div>
 
             </div>
-            <ul className={`menu-links ${openMenu ? 'visible' : ''}`}>
+            <ul className={`menu-links ${openMenu ? 'seen' : ''}`}>
                 <li ><a href="home.html">Home</a></li>
                 <li ><a href="about.html">About</a></li>
                 <li ><a href="menu.html">Menu</a></li>
@@ -30,7 +30,7 @@ function Nav() {
                 <li ><a href="login.html">Login</a></li>
             </ul>
         </nav>
-        <span>{10+16}</span>
+        
     </>
  )
 }

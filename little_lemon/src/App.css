@@ -42,7 +42,7 @@ nav ul li {
   color: rgb(5, 65, 5);
 }
 
-.bar {
+.dash {
   width: 25px;
   height: 3px;
   background-color: black;
@@ -60,7 +60,7 @@ nav ul li {
   align-items: center;
 }
 
-.menu-links.visible {
+.menu-links.seen {
   flex-direction: column;
   position: absolute;
   top: 40px;
@@ -83,7 +83,7 @@ nav ul li {
     display: none;
   }
 
-  .menu-links.visible {
+  .menu-links.seen {
     display: flex;
     background: #333333;
     z-index: 1000;
@@ -99,7 +99,7 @@ nav ul li {
     color: #fff;
   }
 
-  .bar{
+  .dash{
     background: #333333;
   }
 }
