@@ -31,8 +31,6 @@ nav ul li {
   width: 200px;
 }
 
-
-
 .menu a {
   color: black;
   text-decoration: none;
@@ -74,6 +72,86 @@ nav ul li {
 
 }
 
+
+
+/* header section */
+
+header {
+  background-color: #495e57;
+  padding: 40px 0;
+  width: 100%;
+}
+
+
+header section {
+color: #EDEFEE;
+padding: 10px 13%;
+position: relative;
+}
+
+.banner {
+  display: flex;
+}
+
+h2 {
+  color: #F4CE14;
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+.banner p {
+  font-size: 20px;
+  max-width: 520px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.banner-image {
+  position: absolute;
+}
+
+.banner img {
+  position: absolute;
+  right: 13%;
+  top: 15%;
+  width: 400px;
+}
+
+.banner button {
+  border-radius: 10px;
+  width: 200px;
+  height: 40px;
+  color: black;
+  background-color: #F4CE14;
+  cursor: pointer;
+}
+
+form {
+  background-color: #495e57;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 100px 0;
+  align-items:baseline;
+}
+
+form .choosedate {
+  color: white;
+}
+
+#choose-date, #choose-time, #choose-guests, #choose-occasion{
+  background:white;
+  padding: 8px 24px;
+  border:#333333;
+  outline:#333333;
+  border-radius: 5px;
+}
+
+
 @media screen and (max-width: 768px){
   .menu-icon {
     display: block;
@@ -101,5 +179,9 @@ nav ul li {
 
   .dash{
     background: #333333;
+  }
+
+  .banner-image {
+    display:none;
   }
 }
