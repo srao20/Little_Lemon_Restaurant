@@ -31,7 +31,7 @@ const ReserveTable = (props) => {
                 {/*Choose Time*/}
                 <div className="choosetime">
                     <label htmlFor="choose-time">Choose Time: </label>
-                    <select id = 'choose-time' onChange={(e) => setTime(e.target.value)}>
+                    <select id = 'choose-time' onChange={(e) => setTime(e.target.value)} required>
                         <option value = "">Select a time</option>
                         <option value = "morning">8:00 AM</option>
                         <option value = "afternoon">1:00 PM</option>
@@ -46,7 +46,7 @@ const ReserveTable = (props) => {
                     min="1"
                     value={guests}
                     onChange={(e)=> setGuests(e.target.value)}
-                    />
+                    required/>
                 </div>
                 {/*Choose occation*/}
                 <div className="chooseoccation">

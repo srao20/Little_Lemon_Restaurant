@@ -130,6 +130,15 @@ h3 {
 }
 
 form {
+  padding: 10px 13%;
+}
+
+form div {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+form {
   background-color: #495e57;
   background-size: cover;
   display: flex;
@@ -139,16 +148,43 @@ form {
   align-items:baseline;
 }
 
-form .choosedate {
-  color: white;
+#choose-date, .choose-time, #choose-guests, #choose-occasion{
+  padding: 8px 24px;
 }
 
-#choose-date, #choose-time, #choose-guests, #choose-occasion{
-  background:white;
-  padding: 8px 24px;
-  border:#333333;
-  outline:#333333;
-  border-radius: 5px;
+input {
+  margin-left: 10px;
+}
+
+select {
+  margin-left: 10px;
+}
+
+form label {
+  color: #F4CE14;
+}
+
+.submit-btn input{
+  padding: 12px 16px;
+  margin-top: 20px;
+  background: #F4CE14;
+  color: black;
+  border: none;
+  border-radius: 4px;
+}
+
+.confirm-reservation {
+  background-color: #495e57;
+  background-size: cover;
+  width: 100%;
+  padding: 100px 0;
+  text-align: center;
+  color: #F4CE14;
+
+}
+
+.confirm-reservation span {
+  color: blue;
 }
 
 

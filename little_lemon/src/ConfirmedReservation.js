@@ -4,7 +4,8 @@ const confirmedReservation = () => {
     return (
         <div className="confirm-reservation">
             <div>
-                <h1>Your reservation is confirmed!</h1>
+                <h3>Thank You! for providing all the details</h3>
+                <h3>Your reservation is <span>confirmed!</span></h3>
             </div>
         </div>
     )
