@@ -17,6 +17,9 @@ const ReserveTable = (props) => {
     return (
         <>
            <form onSubmit={handleSubmit}>
+                <div>
+                    <h3>Provide Your Reservation Details</h3>
+                </div>
                 {/*Choose Date*/}
                 <div className="choosedate">
                     <label htmlFor="choose-date">Choose Date: </label>

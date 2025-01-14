@@ -147,7 +147,9 @@ form {
   padding: 100px 0;
   align-items:baseline;
 }
-
+form h3 {
+  color: #F4CE14;
+}
 #choose-date, .choose-time, #choose-guests, #choose-occasion{
   padding: 8px 24px;
 }
