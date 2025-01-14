@@ -187,6 +187,33 @@ form label {
   color: blue;
 }
 
+footer section{
+  padding: 10px 13%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.web-logo img{
+  margin-top: 12px;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+}
+
+footer h3{
+  font-size: 18px;
+}
+
+footer ul{
+  padding: 0;
+}
+
+footer ul li{
+  padding: 8px 0;
+}
+
+
 
 @media screen and (max-width: 768px){
   .menu-icon {

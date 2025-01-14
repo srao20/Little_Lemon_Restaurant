@@ -1,44 +1,47 @@
-import logo from "./images/logo1.jpg"
+import logo from "./images/footer_logo.jpg"
 
-function Footer() {
+const Footer = () => {
     return (
         <>
             <footer>
-                <img src={logo} alt="logo"/>
-                <div>
-                    <div>
-                        <h4>Doormat Navigation</h4>
+                <section>
+                    <div className="web-logo">
+                        <img src={logo} alt="logo"/>
                     </div>
+                
                     <div>
-                        <ul>
-                            <li><a href="home.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="menu.html">menu</a></li>
-                            <li><a href="reservations.html">Reservations</a></li>
-                            <li><a href="orderOnline.html">Order Online</a></li>
-                            <li><a href="login.html">Login</a></li>
+                        <div>
+                            <h4>Important Links</h4>
+                            <ul>
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/">About</a></li>
+                                <li><a href="/">menu</a></li>
+                                <li><a href="/">Reservations</a></li>
+                                <li><a href="/">Order Online</a></li>
+                                <li><a href="/">Login</a></li>
                             </ul>
-                    </div>
-                </div>
-                <div>
-                    <h4>Contact</h4>
-                    <ul>
-                        <li>Address</li>
-                        <li>Phone</li>
-                        <li>Email</li>
-                    </ul>
-                </div>
-                <div>
-                    <div>
-                        <h4>Socila Media Link</h4>
+                        </div>
                     </div>
                     <div>
+                        <h4>Contact</h4>
                         <ul>
-                            <li><a>Facebook</a></li>
-                            <li><a>Instagram</a></li>
+                            <li>Ardsley Palace, Tucker GA 30084</li>
+                            <li>+1 6666666666</li>
+                            <li>liitlelemon@outlook.com</li>
                         </ul>
                     </div>
-                </div>
+                    <div>
+                        <div>
+                            <h4>Socila Media Link</h4>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><a href='/'>Facebook</a></li>
+                                <li><a href='/'>Instagram</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
             </footer>
         </>
     )
