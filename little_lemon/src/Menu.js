@@ -2,20 +2,20 @@ const objects = [
     {
         name:'Greek Salad',
         price:'12.99',
-        description:'The famous greek salad of crispy lettuce, peppers, olives, and our chicago style feta cheese, garnished with crunchy garlic and rosemary croutons.',
-        img:require("./images/greek salad.jpg")
+        description:'The greek salad of crispy lettuce, peppers, olives, and feta cheese, garnished with garlic and rosemary croutons.',
+        img:require("./images/greek salad1.jpg")
     },
     {
         name:'Bruchetta',
         price:'9.99',
-        description:'Our Bruchetta is made from grilled bread that has been smeared in garlic and seasoned with salt and olive oil.',
-        img:require("./images/bruchetta.jpeg")
+        description:'Balsamic Bruchetta is an Itallian dish that is made from grilled bread topped with garlic, olive oil, and salt.',
+        img:require("./images/bruchetta1.jpg")
     },
     {
         name:'Lemon Dessert',
         price:'9.99',
-        description:'This comes straight from grandma\'s recipe book, every last ingredient has been sourced and is authentic as can be imagined.',
-        img:require("./images/lemon dessert.jpg")
+        description:'Sweet and tangy delight made with real lemon juice and zest. Every last ingredient has been sourced and is authentic as can be imagined.',
+        img:require("./images/lemon dessert1.jpg")
     }
 ]
 export function Menu({name, price, description, img}){
