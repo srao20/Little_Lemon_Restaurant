@@ -3,7 +3,7 @@ import ReserveTable from './ReserveTable';
 const Reservations = (props) => {
     return (
         <>
-        <ReserveTable SubmitForm = {props.SubmitForm} />
+        <ReserveTable timeAvailaibility = {props.timeAvailaibility} dispatch = {props.dispatch} SubmitForm = {props.SubmitForm} />
         </>
     );
 };

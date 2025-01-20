@@ -14,6 +14,11 @@ const ReserveTable = (props) => {
 
     }
 
+    const handleChange = (e) => {
+        setDate(e);
+        props.dispatch(e);
+    }
+
     return (
         <>
            <form onSubmit={handleSubmit}>
@@ -27,18 +32,19 @@ const ReserveTable = (props) => {
                     id = 'choose-date'
                     type = "date"
                     value = {date}
-                    onChange = {(e) => setDate(e.target.value)}
+                    onChange = {(e) => handleChange(e.target.value)}
                     required
                     />
                 </div>
                 {/*Choose Time*/}
                 <div className="choosetime">
                     <label htmlFor="choose-time">Choose Time: </label>
-                    <select id = 'choose-time' onChange={(e) => setTime(e.target.value)} required>
+                    <select id = 'choose-time' value={time} onChange={(e) => setTime(e.target.value)}>
                         <option value = "">Select a time</option>
-                        <option value = "morning">8:00 AM</option>
-                        <option value = "afternoon">1:00 PM</option>
-                        <option value = "evening">4:00 PM</option>
+                        {
+                            props.timeAvailaibility.timeAvailaibility.map(timeAvailaibility => {return <option key={timeAvailaibility}>{timeAvailaibility}</option>
+                            })
+                        }
                     </select>
                 </div>
                 {/*Choose Guests*/}
