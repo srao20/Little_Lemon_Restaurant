@@ -4,6 +4,6 @@ import App from '../App.js'
 
 test("Renders the Reserve Tabke heading", ()=>{
     render(<App/>);
-    const BookingForm = screen.getByText("reservations");
-    expect(BookingForm).toBeInTheDocument()
+    const ReserveTable = screen.getByText("reservations");
+    expect(ReserveTable).toBeInTheDocument()
 })
